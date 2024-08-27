@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9fcfd;
+    font-family: "Poppins", sans-serif;
+}
+
+b {
+    font-weight: 700;
+}
+
+.container {
+    max-width: 980px;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.card {
+    padding: 1rem;
+    width: 100%;
+    min-height: 200px;
+    background-color: #fff;
+    border: 1px solid #f2f4f5;
+    border-radius: 0.5rem;
+    box-shadow: #0000000f 0 2px 2px 0px;
+}
+
+.content {
+    margin: auto;
+    padding: 1rem;
+}
+
+.content h2 {
+    font-size: 1.75rem;
+    color: #1e282e;
+    font-weight: 700;
+}
+
+.content p {
+    font-size: 1rem;
+    line-height: 1.25;
+    margin-top: 0.75rem;
+    color: #2e393f;
+}

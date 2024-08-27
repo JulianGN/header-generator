@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de Header FenyxBr</title>
+  </head>
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="./js/html2canvas.min.js"></script>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div id="hg-header-area" class="header-print">
+          <div class="hg-header-container">
+            <div id="hg-header-main-logo" class="header-logo">
+              <img src="./imgs/fenyxbr-versao-principal.svg" alt="FenyxBr" />
+            </div>
+            <div id="hg-header-title" class="header-title header-title--center">
+              <div class="header-title-container">
+                <div class="header-title-container-title">
+                  <h1 id="hg-header-title-main" class="header-title-main">
+                    Título aqui
+                  </h1>
+                  <h2 id="hg-header-title-sub" class="header-title-sub">
+                    Subtítulo
+                  </h2>
+                </div>
+
+                <div id="hg-header-box" class="header-title-box">
+                  <p>
+                    Para uso confidencial de:
+                    <b id="hg-box-nome"
+                      >A.W. COMERCIO S M INFO PROT CRED LTDA</b
+                    >
+                  </p>
+                  <p>
+                    Data e Hora: <b id="hg-box-data-hora">26/0/2024</b> | Chave:
+                    <b id="hg-box-chave">CAP-1724677164-60737600</b>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="hg-header-secondary-logo" class="header-logo">
+              <img
+                src="./imgs/logo_serasa-distribuidor-autorizado.png"
+                alt="Serasa - Distribuidor Autorizado"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="content">
+          <h2>Praesent scelerisque</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            scelerisque, purus in tincidunt malesuada, est leo eleifend ipsum,
+            id consequat ante libero non libero. Vestibulum non ullamcorper
+            elit. Nullam convallis, lacus non dictum finibus, dui enim mollis
+            ex, sit amet aliquet leo nibh id tellus. Sed elit libero, bibendum
+            in risus id, congue sollicitudin lectus. Aliquam a blandit neque.
+            Suspendisse potenti. Fusce fringilla nisi laoreet, bibendum enim id,
+            feugiat felis. Nunc mi metus, semper id scelerisque ut, interdum in
+            ipsum. Donec orci mauris, posuere eu tincidunt vitae, tempus vel
+            ligula.
+          </p>
+          <p>
+            Duis pulvinar nec neque eget scelerisque. Vestibulum ante ipsum
+            primis in faucibus orci luctus et ultrices posuere cubilia curae;
+            Maecenas sem metus, convallis sed pulvinar nec, ullamcorper et
+            tortor. Cras laoreet ullamcorper fermentum. Nunc nec viverra sem.
+            Nullam faucibus vehicula turpis, nec dignissim ipsum fringilla sit
+            amet. Fusce a vulputate metus. Ut leo urna, feugiat quis urna eget,
+            finibus egestas velit. Integer ac vestibulum nisi. Sed consequat leo
+            porttitor tincidunt posuere.
+          </p>
+          <p>
+            Donec varius venenatis neque, consequat facilisis eros efficitur a.
+            Nulla et molestie nisl, nec faucibus leo. Pellentesque commodo velit
+            ut dui iaculis venenatis ut sed lectus. Aliquam nec consectetur
+            ipsum. In fermentum iaculis velit facilisis vulputate. Pellentesque
+            feugiat dolor et metus finibus, ut eleifend augue vehicula. Donec ut
+            nunc nec neque fringilla congue. Cras laoreet, sapien vel
+            sollicitudin sollicitudin, ligula neque euismod neque, nec
+            pellentesque purus felis sit amet ligula. Curabitur a est ut ex
+            euismod dapibus id nec velit. Phasellus quis nibh gravida, maximus
+            ex quis, dignissim leo. Praesent quis nisl eget ex pulvinar feugiat
+            eu sed magna. In neque massa, maximus placerat aliquam vel, luctus
+            sit amet lorem. In dictum ornare purus, id pharetra ipsum varius
+            nec. Suspendisse egestas, leo sit amet fermentum placerat, elit
+            velit varius urna, id sodales lacus velit eget enim. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit. Ut placerat fermentum
+            purus vitae scelerisque.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="hg-actions-container">
+      <div class="input-container">
+        <label for="hg-actions-title">Título</label>
+        <input type="text" name="hg-actions-title" id="hg-actions-title" />
+      </div>
+      <div class="input-container">
+        <label for="hg-actions-sub">Subtítulo</label>
+        <input type="text" name="hg-actions-sub" id="hg-actions-sub" />
+      </div>
+
+      <div class="input-container">
+        <label for="hg-actions-box">
+          Box
+          <input type="checkbox" name="hg-actions-box" id="hg-actions-box" />
+        </label>
+      </div>
+
+      <div id="hg-actions-box-options-container">
+        <div class="hg-actions-box-control">
+          <div class="input-container">
+            <label for="hg-actions-box-nome">Nome cliente</label>
+            <input
+              type="text"
+              name="hg-actions-box-nome"
+              id="hg-actions-box-nome"
+            />
+          </div>
+          <div class="input-container">
+            <label for="hg-actions-box-date">Data</label>
+            <input
+              type="datetime-local"
+              name="hg-actions-box-date"
+              id="hg-actions-box-date"
+            />
+          </div>
+          <div class="input-container">
+            <label for="hg-actions-box-chave">Chave</label>
+            <input
+              type="text"
+              name="hg-actions-box-chave"
+              id="hg-actions-box-chave"
+            />
+          </div>
+        </div>
+      </div>
+      <button id="header-generator-action-download-image">Baixar</button>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
