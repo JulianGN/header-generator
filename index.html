@@ -12,10 +12,10 @@
       <div class="card">
         <div id="hg-header-area" class="header-print">
           <div class="hg-header-container">
-            <div id="hg-header-main-logo" class="header-logo">
+            <div id="hg-header-fenxybr-logo" class="header-logo">
               <img src="./imgs/fenyxbr-versao-principal.svg" alt="FenyxBr" />
             </div>
-            <div id="hg-header-title" class="header-title header-title--center">
+            <div id="hg-header-title" class="header-title">
               <div class="header-title-container">
                 <div class="header-title-container-title">
                   <h1 id="hg-header-title-main" class="header-title-main">
@@ -29,22 +29,20 @@
                 <div id="hg-header-box" class="header-title-box">
                   <p>
                     Para uso confidencial de:
-                    <b id="hg-box-nome"
-                      >A.W. COMERCIO S M INFO PROT CRED LTDA</b
-                    >
+                    <b id="hg-box-nome">Nome aqui</b>
                   </p>
                   <p>
-                    Data e Hora: <b id="hg-box-data-hora">26/0/2024</b> | Chave:
-                    <b id="hg-box-chave">CAP-1724677164-60737600</b>
+                    Data e Hora: <b id="hg-box-data-hora">dd/mm/aaaa hh:mm</b> |
+                    Chave:
+                    <b id="hg-box-chave">Chave aqui</b>
                   </p>
                 </div>
               </div>
             </div>
-            <div id="hg-header-secondary-logo" class="header-logo">
+            <div id="hg-header-serasa-logo" class="header-logo">
               <img
                 src="./imgs/logo_serasa-distribuidor-autorizado.png"
-                alt="Serasa - Distribuidor Autorizado"
-              />
+                alt="Serasa - Distribuidor Autorizado" />
             </div>
           </div>
         </div>
@@ -95,50 +93,106 @@
       </div>
     </div>
     <div class="hg-actions-container">
-      <div class="input-container">
-        <label for="hg-actions-title">Título</label>
-        <input type="text" name="hg-actions-title" id="hg-actions-title" />
-      </div>
-      <div class="input-container">
-        <label for="hg-actions-sub">Subtítulo</label>
-        <input type="text" name="hg-actions-sub" id="hg-actions-sub" />
-      </div>
-
-      <div class="input-container">
-        <label for="hg-actions-box">
-          Box
-          <input type="checkbox" name="hg-actions-box" id="hg-actions-box" />
-        </label>
+      <div>
+        <div class="input-container">
+          <label for="hg-actions-title">Título</label>
+          <input type="text" name="hg-actions-title" id="hg-actions-title" />
+        </div>
+        <div class="input-container">
+          <label for="hg-actions-sub">Subtítulo</label>
+          <input type="text" name="hg-actions-sub" id="hg-actions-sub" />
+        </div>
       </div>
 
-      <div id="hg-actions-box-options-container">
-        <div class="hg-actions-box-control">
-          <div class="input-container">
-            <label for="hg-actions-box-nome">Nome cliente</label>
+      <div>
+        <div class="input-container">
+          <label for="hg-actions-logo-serasa" class="hg-checkbox-container">
             <input
-              type="text"
-              name="hg-actions-box-nome"
-              id="hg-actions-box-nome"
-            />
-          </div>
-          <div class="input-container">
-            <label for="hg-actions-box-date">Data</label>
+              checked="true"
+              type="checkbox"
+              name="hg-actions-logo-serasa"
+              id="hg-actions-logo-serasa" />
+            Logo Serasa habilitado
+          </label>
+        </div>
+
+        <div class="input-container">
+          <label for="hg-actions-logo-left" class="hg-checkbox-container">
             <input
-              type="datetime-local"
-              name="hg-actions-box-date"
-              id="hg-actions-box-date"
-            />
-          </div>
-          <div class="input-container">
-            <label for="hg-actions-box-chave">Chave</label>
-            <input
-              type="text"
-              name="hg-actions-box-chave"
-              id="hg-actions-box-chave"
-            />
+              checked="true"
+              disabled
+              type="checkbox"
+              name="hg-actions-logo-left"
+              id="hg-actions-logo-left" />
+            Logo FenyxBr na esquerda
+          </label>
+        </div>
+
+        <div class="input-container">
+          <label> Alinhamento do texto </label>
+          <div class="hg-checkbox-container">
+            <div class="hg-checkbox-container">
+              <input
+                type="radio"
+                name="hg-actions-alinhamento-texto"
+                id="hg-actions-alinhamento-texto-left"
+                value="left" />
+              <label for="hg-actions-alinhamento-texto-left">Esq.</label>
+            </div>
+            <div class="hg-checkbox-container">
+              <input
+                type="radio"
+                name="hg-actions-alinhamento-texto"
+                id="hg-actions-alinhamento-texto-center"
+                value="center" />
+              <label for="hg-actions-alinhamento-texto-center">Cen.</label>
+            </div>
+            <div class="hg-checkbox-container">
+              <input
+                type="radio"
+                name="hg-actions-alinhamento-texto"
+                id="hg-actions-alinhamento-texto-right"
+                value="right" />
+              <label for="hg-actions-alinhamento-texto-right">Dir.</label>
+            </div>
           </div>
         </div>
       </div>
+
+      <div>
+        <div class="input-container">
+          <label for="hg-actions-box" class="hg-checkbox-container">
+            <input type="checkbox" name="hg-actions-box" id="hg-actions-box" />
+            Box
+          </label>
+        </div>
+        <div id="hg-actions-box-options-container">
+          <div class="hg-actions-box-control">
+            <div class="input-container">
+              <label for="hg-actions-box-nome">Nome cliente</label>
+              <input
+                type="text"
+                name="hg-actions-box-nome"
+                id="hg-actions-box-nome" />
+            </div>
+            <div class="input-container">
+              <label for="hg-actions-box-date">Data</label>
+              <input
+                type="datetime-local"
+                name="hg-actions-box-date"
+                id="hg-actions-box-date" />
+            </div>
+            <div class="input-container">
+              <label for="hg-actions-box-chave">Chave</label>
+              <input
+                type="text"
+                name="hg-actions-box-chave"
+                id="hg-actions-box-chave" />
+            </div>
+          </div>
+        </div>
+      </div>
+
       <button id="header-generator-action-download-image">Baixar</button>
     </div>
     <script src="./js/script.js"></script>
