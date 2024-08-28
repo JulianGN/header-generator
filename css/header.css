@@ -105,3 +105,8 @@
     line-height: 1.15;
     color: #004679;
 }
+
+.hg-actions-alinhamento-texto-label {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
