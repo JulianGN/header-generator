@@ -134,9 +134,11 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function handleDownload() {
-    html2canvas(captureArea).then(function (canvas) {
+    html2canvas(captureArea, {
+      useCORS: true,
+    }).then(function (canvas) {
       const link = document.createElement("a");
-      link.href = canvas.toDataURL("image/jpeg");
+      link.href = canvas.toDataURL("image/jpeg", 1.0);
       link.download = "header.jpg";
       link.click();
     });
